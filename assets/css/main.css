@@ -1,0 +1,144 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.nav{
+    width: 100%;
+    background-color: rgb(43, 62, 79);
+}
+header{
+    width: 100%;
+    background-color: rgb(0, 188, 158);
+}
+.px20{
+    font-size: 20px;
+}
+.px24{
+    font-size: 24px;
+}
+.px36{
+    font-size: 36px;
+}
+.px72{
+    font-size: 72px;
+}
+.resulation{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.margin{
+    margin: 0 0 7% 0;
+}
+.white{
+    color: white;
+    font-weight: 700;
+}
+.white:hover{
+    color: rgb(0, 188, 158);
+}
+
+.line{
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.line::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    right: 52%;
+    top: 50%;
+    border-radius: 5px;
+    margin-left: 32rem;
+    background-color: white;
+}
+.line::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    left: 14%;
+    top: 50%;
+    border-radius: 5px;
+    margin-left: 32rem;
+    background-color: white;
+}
+.line2::after , .line2::before{
+    background-color: black;
+}
+
+
+
+.la-star{
+    font-size: 48px;
+}
+
+.item{
+    position: relative;
+}
+.font{
+    height: 98%;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(0, 188, 158);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.item:hover .font{
+    opacity: 0.8;
+}
+.plus{
+    color: white;
+    line-height: 250px;
+    font-size: 72px;
+}
+.bars{
+    font-size: 48px;
+    color: white;
+    display: none;
+}
+
+@media (max-width:576px) {
+    .resulation h1{
+        font-size: 24px;
+    }
+    .resulation p{
+        font-size: 12px;
+    }
+    .line::after{
+        left: -135%;  
+    }
+    .line::before{
+        right: 59%; 
+    }
+    .w-30{
+        width: 100%;
+    }
+    .bars{
+        display: block;
+    }
+    .menu li{
+        display: none;
+    }
+}
+@media (min-width:576px) and (max-width:768px) {
+    .resulation h1{
+        font-size: 48px;
+    }
+    .resulation p{
+        font-size: 16px;
+    }
+    .line::after{
+        left: -40%;  
+    }
+    .line::before{
+        right: 55%; 
+    }
+    .w-30{
+        width: 46%;
+    }
+}
