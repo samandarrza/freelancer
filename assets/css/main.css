@@ -38,32 +38,36 @@ header{
 }
 
 .line{
+    width: 250px;
+    margin: auto;
+    margin-top: 15px;
     font-size: 36px;
-    display: flex;
-    justify-content: center;
     position: relative;
-    margin-bottom: 2rem;
+    color: white;
+    text-align: center;
 }
 .line::before{
     content: '';
+    transform: translateY(-50%);
     position: absolute;
+    left: 0;
     width: 100px;
-    height: 5px;
-    right: 52%;
     top: 50%;
+    border: none;
+    height: 5px;
     border-radius: 5px;
-    margin-left: 32rem;
     background-color: white;
 }
 .line::after{
     content: '';
+    transform: translateY(-50%);
     position: absolute;
+    right: 0;
     width: 100px;
-    height: 5px;
-    left: 14%;
     top: 50%;
+    border: none;
+    height: 5px;
     border-radius: 5px;
-    margin-left: 32rem;
     background-color: white;
 }
 .line2::after , .line2::before{
@@ -109,12 +113,6 @@ header{
     .resulation p{
         font-size: 12px;
     }
-    .line::after{
-        left: -135%;  
-    }
-    .line::before{
-        right: 59%; 
-    }
     .w-30{
         width: 100%;
     }
@@ -126,17 +124,12 @@ header{
     }
 }
 @media (min-width:576px) and (max-width:768px) {
+
     .resulation h1{
         font-size: 48px;
     }
     .resulation p{
         font-size: 16px;
-    }
-    .line::after{
-        left: -40%;  
-    }
-    .line::before{
-        right: 55%; 
     }
     .w-30{
         width: 46%;
